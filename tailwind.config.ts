@@ -1,20 +1,26 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss'
 
 const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        pattern: "url('/bg-pattern.svg')",
+      },
+      colors: {
+        layer1: '#000A35',
+        layer2: '#011B48',
+        primary: '#FFFF00',
+        secondary: '#F97C00',
+        BDpink: '#FF0090',
+        BDlightblue: '#00FFF2',
+        BDyellow: '#FFF800',
       },
     },
   },
-  plugins: [],
-};
-export default config;
+  plugins: [require('@headlessui/tailwindcss')],
+}
+export default config
