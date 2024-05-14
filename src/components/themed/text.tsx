@@ -6,23 +6,33 @@ interface TextProps
     HTMLAttributes<HTMLParagraphElement> {
   content?: string
   var: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span'
+  type?: 'primary' | 'secondary'
 }
-export default function Text({ content, ...props }: TextProps) {
+export default function Text({
+  content,
+  type = 'primary',
+  ...props
+}: TextProps) {
   return (
     <div className="relative">
       <props.var
         {...props}
-        className={clsx(props.className, ' text-white text-stroke')}
+        className={clsx(
+          props.className,
+          type === 'primary' && 'text-stroke',
+          ' text-white '
+        )}
       >
         {content || props.children}
-        <props.var
+        <span
           className={clsx(
             props.className,
-            'absolute text-layer2 left-[0.25rem] top-[0.25rem] z-[-1]'
+            type === 'primary' ? 'text-layer2' : 'text-BDpink',
+            'absolute  inset-[0.25rem] z-[-1]'
           )}
         >
           {content || props.children}
-        </props.var>
+        </span>
       </props.var>
     </div>
   )

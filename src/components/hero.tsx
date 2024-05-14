@@ -3,8 +3,8 @@ import HeroImage from '#/hero.png'
 
 export default function Hero() {
   return (
-    <div className="h-[500px] w-full relative">
-      <Image src={HeroImage} fill alt="Battle Derby" />
-    </div>
+    <section className="h-[500px] w-full">
+      <Image src={HeroImage} width={1280} height={500} alt="Battle Derby" />
+    </section>
   )
 }
