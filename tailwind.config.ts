@@ -9,6 +9,8 @@ const config: Config = {
     extend: {
       backgroundImage: {
         pattern: "url('/bg-pattern.svg')",
+        seasonItem: "url('/season-bg.png')",
+        trackingSeasonItem: "url('/tracking-season-bg.png')",
       },
       colors: {
         layer1: '#000A35',

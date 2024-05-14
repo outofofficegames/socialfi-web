@@ -11,7 +11,7 @@ export default function Title({
   subtitle?: string
 }) {
   return (
-    <div className="-rotate-2 relative">
+    <div className="-rotate-2 relative mb-16">
       <Text
         var="h2"
         type="secondary"
