@@ -48,13 +48,13 @@ export default function Menu() {
         }
       >
         {menuItems.map((item, idx) => (
-          <>
-            <MenuItem key={item.href}>
+          <div key={item.href + item.title} className=" contents">
+            <MenuItem>
               <Link
                 className={clsx(
                   'flex justify-center data-[focus]:bg-blue-100 z-10 gap-6'
                 )}
-                href="/settings"
+                href={item.href}
               >
                 <Image
                   src={item.image}
@@ -70,7 +70,7 @@ export default function Menu() {
             {idx === menuItems.length - 1 ? null : (
               <div className=" w-full h-[2px] bg-layer2" />
             )}
-          </>
+          </div>
         ))}
       </MenuItems>
     </HeadlessMenu>

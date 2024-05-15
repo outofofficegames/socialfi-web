@@ -7,7 +7,7 @@ export default function LeaderList({ data }: { data: any[] }) {
       <thead className=" border-BDlightblue border-b-4">
         <tr>
           {tableHeads.map((title) => (
-            <th key={title} className="text-left">
+            <th key={title + '_leaderTitle'} className="text-left">
               <StrokedText var="h4" className="uppercase text-xl">
                 {title}
               </StrokedText>
@@ -17,7 +17,10 @@ export default function LeaderList({ data }: { data: any[] }) {
       </thead>
       <tbody>
         {data.map((item, idx) => (
-          <LeaderListItem item={{ ...item, rank: idx + 1 }} key={item.id} />
+          <LeaderListItem
+            item={{ ...item, rank: idx + 1 }}
+            key={item.name + '_leaderItem_' + item.inviter}
+          />
         ))}
       </tbody>
     </table>

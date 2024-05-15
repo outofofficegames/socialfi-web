@@ -4,14 +4,14 @@ import Discord from '#/discord-icon.svg'
 import XIcon from '#/x-icon.svg'
 const data = [
   {
-    id: 1,
+    id: 'dfsgiu89',
     image: Discord,
     title: 'Connect Discord',
     description: 'Lorem ipsum dolor successful shots lorem ipsum dolor',
     points: 50,
   },
   {
-    id: 2,
+    id: 'kjbdfg785v2',
     image: XIcon,
 
     title: 'Connect X',
@@ -19,24 +19,22 @@ const data = [
     points: 50,
   },
   {
-    id: 2,
+    id: 'df09lknm',
     title: 'Join Discord',
     image: Discord,
     description: 'Lorem ipsum dolor successful shots lorem ipsum dolor',
     points: 100,
   },
   {
-    id: 2,
+    id: '123asdxvc',
     image: XIcon,
-
     title: 'Follow BD on X',
     description: 'Lorem ipsum dolor successful shots lorem ipsum dolor',
     points: 150,
   },
   {
-    id: 2,
+    id: 'ghnr6709',
     image: XIcon,
-
     title: 'Subscribe YT',
     points: 150,
   },

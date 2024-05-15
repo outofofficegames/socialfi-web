@@ -3,7 +3,7 @@ import TrackingSeasonList from './list'
 import HeroImage2 from '#/hero2.png'
 const data = [
   {
-    id: 1,
+    id: 'dfo8yhydsfg',
     image: HeroImage2,
     title: 'Name mission r1',
     description:
@@ -12,7 +12,7 @@ const data = [
     points: 150,
   },
   {
-    id: 2,
+    id: '094556bdf',
     image: HeroImage2,
 
     title: 'Name mission r2',
@@ -21,7 +21,7 @@ const data = [
     points: 250,
   },
   {
-    id: 3,
+    id: '!@#ndsvfj',
     title: 'Name mission r3',
     image: HeroImage2,
     description:
