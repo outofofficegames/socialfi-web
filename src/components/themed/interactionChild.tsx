@@ -20,7 +20,10 @@ export default function InteractionChild({
         src={BorderHighlight}
         fill
         alt="border highligther"
-        className="absolute scale-y-[1.3] scale-x-[1.125]"
+        className={clsx(
+          icon ? 'scale-y-[1.25] scale-x-[1.1]' : 'scale-y-[1.9] scale-x-[1.1]',
+          'absolute -skew-x-6'
+        )}
       />
       <div className="bg-gradient-to-b from-primary to-secondary  rounded-lg -skew-x-6 absolute inset-0 z-[-2]" />
       {isLoading ? <Loader size="md" tint="fill-white" /> : icon}
