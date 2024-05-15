@@ -20,14 +20,24 @@ export default function StrokedText({
         className={clsx(
           props.className,
           type === 'primary' && 'text-stroke',
-          type === 'tertiary' ? 'text-BDyellow' : ' text-white '
+          type === 'tertiary'
+            ? 'text-BDyellow'
+            : type === 'quaternary'
+              ? ' text-transparent'
+              : 'text-white ',
+          type === 'quaternary' &&
+            'bg-gradient-to-b from-secondary via-primary to-secondary bg-clip-text'
         )}
       >
         {content || props.children}
         <span
           className={clsx(
             props.className,
-            type === 'secondary' ? 'text-BDpink' : 'text-[#00126D]',
+            type === 'secondary'
+              ? 'text-BDpink'
+              : type === 'quaternary'
+                ? 'text-[#3f1000]'
+                : 'text-[#00126D]',
             'absolute  inset-[0.3rem] z-[-1]'
           )}
         >

@@ -13,7 +13,7 @@ export default function TrackingSeasonListItem({ item }: { item: any }) {
         className="ml-6 z-10"
       />
       <div className="flex flex-col gap-4 z-10 py-6">
-        <StrokedText var="h3" className="text-5xl">
+        <StrokedText var="h3" className="text-5xl" type="quaternary">
           {item.title}
         </StrokedText>
         <p className="text-xl">{item.description}</p>
