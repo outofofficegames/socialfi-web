@@ -1,4 +1,4 @@
-import Title from '@/components/themed/title'
+import Title from '@/components/themed/sectionTitle'
 import TrackingSeasonList from './list'
 import HeroImage2 from '#/hero2.png'
 const data = [

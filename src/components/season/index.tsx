@@ -1,6 +1,6 @@
-import Title from '@/components/themed/title'
+import Title from '@/components/themed/sectionTitle'
 import SeasonList from './list'
-import Discord from '#/discord.svg'
+import Discord from '#/discord-icon.svg'
 const data = [
   {
     id: 1,
@@ -9,7 +9,7 @@ const data = [
     description:
       'Make 150 successful shots lorem ipsum dolor successful shots lorem ipsum dolor',
     hint: 'Make 150 successful shots lorem ipsum dolor',
-    points: 5,
+    points: 15,
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const data = [
     description:
       'Make 150 successful shots lorem ipsum dolor successful shots lorem ipsum dolor',
     hint: 'Make 150 successful shots lorem ipsum dolor',
-    points: 5,
+    points: 15,
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ const data = [
     description:
       'Make 150 successful shots lorem ipsum dolor successful shots lorem ipsum dolor',
     hint: 'Make 150 successful shots lorem ipsum dolor',
-    points: 5,
+    points: 15,
   },
 ]
 export default function Season() {

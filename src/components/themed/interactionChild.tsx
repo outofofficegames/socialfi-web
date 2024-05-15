@@ -1,6 +1,6 @@
 import clsx from 'clsx'
 import Loader from './loader'
-import Text from './text'
+import StrokedText from './strokedText'
 import BorderHighlight from '#/border-highlight.svg'
 import Image from 'next/image'
 
@@ -24,12 +24,12 @@ export default function InteractionChild({
       />
       <div className="bg-gradient-to-b from-primary to-secondary  rounded-lg -skew-x-6 absolute inset-0 z-[-2]" />
       {isLoading ? <Loader size="md" tint="fill-white" /> : icon}
-      <Text
+      <StrokedText
         var="span"
         className={clsx(isLoading && 'ml-1', 'uppercase text-2xl')}
       >
         {title}
-      </Text>
+      </StrokedText>
     </div>
   )
 }

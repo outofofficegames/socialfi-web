@@ -2,7 +2,7 @@ import Image from 'next/image'
 import TitleBG from '#/title-bg.png'
 import BorderHorizontal from '#/border-laser-horizontal.png'
 import ClockIcon from '#/clock-icon.svg'
-import Text from './text'
+import StrokedText from './strokedText'
 export default function Title({
   title,
   subtitle,
@@ -11,14 +11,14 @@ export default function Title({
   subtitle?: string
 }) {
   return (
-    <div className="-rotate-2 relative mb-16">
-      <Text
+    <div className="-rotate-2 relative mb-24">
+      <StrokedText
         var="h2"
         type="secondary"
         className=" text-5xl uppercase text-center"
       >
         {title}
-      </Text>
+      </StrokedText>
       <Image
         src={BorderHorizontal}
         width={529}

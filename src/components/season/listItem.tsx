@@ -1,38 +1,39 @@
 import BorderImage from '#/border-laser.png'
 import Image from 'next/image'
-import Text from '../themed/text'
+import StrokedText from '../themed/strokedText'
 import Link from 'next/link'
 import InteractionChild from '../themed/interactionChild'
 
 export default function SeasonListItem({ item }: { item: any }) {
   return (
-    <div className="bg-contain bg-seasonItem flex bg-layer1 bg-no-repeat border-4 border-BDlightblue items-center">
-      <div className="flex items-center relative">
+    <div className="bg-cover bg-seasonItem flex bg-layer1 gap-6 bg-no-repeat border-4 border-BDlightblue items-center">
+      <div className="flex items-center relative flex-shrink-0">
         <Image
           src={item.image}
           width={100}
           height={100}
           alt={item.title}
-          className=" aspect-square m-4"
+          className="aspect-square"
         />
-        <p>
-          <Text var="span">+{item.points}</Text>
-          <Text var="span">Points</Text>
+        <p className="z-10">
+          <StrokedText var="span" className=" text-5xl">
+            +{item.points}
+          </StrokedText>
+          <StrokedText var="span" className="uppercase text-xl">
+            Points
+          </StrokedText>
         </p>
       </div>
-      <Image
-        src={BorderImage}
-        width={20}
-        height={185}
-        alt="border"
-        className=" max-h-full"
-      />
       <div>
-        <Text var="h3">{item.title}</Text>
-        <p>{item.description}</p>
-        <span>{item.hint}</span>
+        <Image src={BorderImage} width={20} height={185} alt="border" />
       </div>
-      <div className="relative flex-shrink-0 z-10">
+      <div className="flex flex-col gap-4 z-20 relative">
+        <StrokedText var="h3" className="text-5xl">
+          {item.title}
+        </StrokedText>
+        <p className="text-xl">{item.description}</p>
+      </div>
+      <div className="relative flex-shrink-0 z-10 pr-6">
         <Link href={'#'}>
           <InteractionChild title="Go!" />
         </Link>

@@ -7,6 +7,7 @@ export default function Home() {
     <>
       <Hero />
       <TrackingSeason />
+      <div className="mb-32" />
       <Season />
     </>
   )

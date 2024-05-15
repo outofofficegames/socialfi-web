@@ -27,7 +27,7 @@ export default function RootLayout({
         )}
       >
         <Header />
-        <main className="relative mx-auto my-4 max-w-7xl md:my-8 flex flex-col flex-1 gap-20">
+        <main className="relative mx-auto my-4 max-w-7xl md:my-8 flex flex-col flex-1">
           <Providers>{children}</Providers>
         </main>
         <Footer />
