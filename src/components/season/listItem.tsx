@@ -15,14 +15,14 @@ export default function SeasonListItem({ item }: { item: any }) {
           alt={item.title}
           className="aspect-square"
         />
-        <p className="z-10">
+        <div className="z-10">
           <StrokedText var="span" className=" text-5xl">
             +{item.points}
           </StrokedText>
           <StrokedText var="span" className="uppercase text-xl">
             Points
           </StrokedText>
-        </p>
+        </div>
       </div>
       <div>
         <Image src={BorderImage} width={20} height={185} alt="border" />

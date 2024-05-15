@@ -15,7 +15,7 @@ export default function InteractionChild({
   title,
 }: InteractionChildProps) {
   return (
-    <div className="inline-flex gap-1 relative px-10 py-3">
+    <div className="inline-flex gap-1 relative px-10 py-3 group">
       <Image
         src={BorderHighlight}
         fill
@@ -25,7 +25,7 @@ export default function InteractionChild({
           'absolute -skew-x-6'
         )}
       />
-      <div className="bg-gradient-to-b from-primary to-secondary  rounded-lg -skew-x-6 absolute inset-0 z-[-2]" />
+      <div className="group-hover:from-secondary group-hover:to-secondary bg-gradient-to-b from-primary to-secondary  rounded-lg -skew-x-6 absolute inset-0 z-[-2]" />
       {isLoading ? <Loader size="md" tint="fill-white" /> : icon}
       <StrokedText
         var="span"
