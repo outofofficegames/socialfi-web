@@ -5,8 +5,14 @@ import BorderImage from '#/border-laser.png'
 export default function TrackingSeasonListItem({ item }: { item: any }) {
   return (
     <div className="bg-cover bg-trackingSeasonItem bg-no-repeat gap-6 bg-layer1 flex border-4 border-BDlightblue items-center">
-      <Image src={item.image} width={200} height={100} alt={item.title} />
-      <div className="flex flex-col gap-4 z-10">
+      <Image
+        src={item.image}
+        width={200}
+        height={200}
+        alt={item.title}
+        className=" self-end"
+      />
+      <div className="flex flex-col gap-4 z-10 py-6">
         <StrokedText var="h3" className="text-5xl">
           {item.title}
         </StrokedText>

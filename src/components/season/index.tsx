@@ -1,6 +1,7 @@
 import Title from '@/components/themed/sectionTitle'
 import SeasonList from './list'
 import Discord from '#/discord-icon.svg'
+import XIcon from '#/x-icon.svg'
 const data = [
   {
     id: 1,
@@ -13,7 +14,7 @@ const data = [
   },
   {
     id: 2,
-    image: Discord,
+    image: XIcon,
 
     title: 'Name mission r2',
     description:
