@@ -5,7 +5,7 @@ import {
   MenuItems,
 } from '@headlessui/react'
 import StarIcon from '#/star-icon.svg'
-import Interactor from './themed/interactionChild'
+import Interactor from '../themed/interactionChild'
 import Image from 'next/image'
 
 export default function Menu() {
