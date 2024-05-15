@@ -6,30 +6,39 @@ const data = [
   {
     id: 1,
     image: Discord,
-    title: 'Name mission r1',
-    description:
-      'Make 150 successful shots lorem ipsum dolor successful shots lorem ipsum dolor',
-    hint: 'Make 150 successful shots lorem ipsum dolor',
-    points: 15,
+    title: 'Connect Discord',
+    description: 'Lorem ipsum dolor successful shots lorem ipsum dolor',
+    points: 50,
   },
   {
     id: 2,
     image: XIcon,
 
-    title: 'Name mission r2',
-    description:
-      'Make 150 successful shots lorem ipsum dolor successful shots lorem ipsum dolor',
-    hint: 'Make 150 successful shots lorem ipsum dolor',
-    points: 15,
+    title: 'Connect X',
+    description: 'Lorem ipsum dolor successful shots lorem ipsum dolor',
+    points: 50,
   },
   {
     id: 2,
-    title: 'Name mission r3',
+    title: 'Join Discord',
     image: Discord,
-    description:
-      'Make 150 successful shots lorem ipsum dolor successful shots lorem ipsum dolor',
-    hint: 'Make 150 successful shots lorem ipsum dolor',
-    points: 15,
+    description: 'Lorem ipsum dolor successful shots lorem ipsum dolor',
+    points: 100,
+  },
+  {
+    id: 2,
+    image: XIcon,
+
+    title: 'Follow BD on X',
+    description: 'Lorem ipsum dolor successful shots lorem ipsum dolor',
+    points: 150,
+  },
+  {
+    id: 2,
+    image: XIcon,
+
+    title: 'Subscribe YT',
+    points: 150,
   },
 ]
 export default function Season() {

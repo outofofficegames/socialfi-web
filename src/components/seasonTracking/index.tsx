@@ -7,28 +7,27 @@ const data = [
     image: HeroImage2,
     title: 'Name mission r1',
     description:
-      'Make 150 successful shots lorem ipsum dolor successful shots lorem ipsum dolor',
-    hint: 'Make 150 successful shots lorem ipsum dolor',
-    points: 5,
+      'Get Our Attention! Earn points by getting engagement from our 2 main accounts!',
+    hint: 'Refered Code - for influencers: TX256$',
+    points: 150,
   },
   {
     id: 2,
     image: HeroImage2,
 
     title: 'Name mission r2',
-    description:
-      'Make 150 successful shots lorem ipsum dolor successful shots lorem ipsum dolor',
-    hint: 'Make 150 successful shots lorem ipsum dolor',
-    points: 5,
+    description: 'Invite Friend: Pimp your friend and get 20 Points invitation',
+    hint: 'Refered Code - for influencers: TX256$',
+    points: 250,
   },
   {
-    id: 2,
+    id: 3,
     title: 'Name mission r3',
     image: HeroImage2,
     description:
-      'Make 150 successful shots lorem ipsum dolor successful shots lorem ipsum dolor',
-    hint: 'Make 150 successful shots lorem ipsum dolor',
-    points: 5,
+      'Mention Us: Create & share posts that mention #BattleDerby and @BattleDerbyGame',
+    hint: 'Refered Code - for influencers: TX256$',
+    points: 350,
   },
 ]
 export default function TrackingSesson() {

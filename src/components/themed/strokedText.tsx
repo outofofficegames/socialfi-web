@@ -6,7 +6,7 @@ interface StrokedTextProps
     HTMLAttributes<HTMLParagraphElement> {
   content?: string
   var: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span'
-  type?: 'primary' | 'secondary'
+  type?: 'primary' | 'secondary' | 'tertiary' | 'quaternary'
 }
 export default function StrokedText({
   content,
@@ -20,14 +20,14 @@ export default function StrokedText({
         className={clsx(
           props.className,
           type === 'primary' && 'text-stroke',
-          ' text-white '
+          type === 'tertiary' ? 'text-BDyellow' : ' text-white '
         )}
       >
         {content || props.children}
         <span
           className={clsx(
             props.className,
-            type === 'primary' ? 'text-[#00126D]' : 'text-BDpink',
+            type === 'secondary' ? 'text-BDpink' : 'text-[#00126D]',
             'absolute  inset-[0.3rem] z-[-1]'
           )}
         >

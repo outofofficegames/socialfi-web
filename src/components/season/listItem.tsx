@@ -7,7 +7,7 @@ import InteractionChild from '../themed/interactionChild'
 export default function SeasonListItem({ item }: { item: any }) {
   return (
     <div className="bg-cover bg-seasonItem flex bg-layer1 gap-6 bg-no-repeat border-4 border-BDlightblue items-center">
-      <div className="flex items-center relative flex-shrink-0 gap-4 pl-6">
+      <div className="flex items-center relative flex-shrink-0 gap-6 pl-6">
         <Image
           src={item.image}
           width={100}
@@ -16,7 +16,7 @@ export default function SeasonListItem({ item }: { item: any }) {
           className="aspect-square"
         />
         <div className="z-10">
-          <StrokedText var="span" className=" text-5xl">
+          <StrokedText var="span" className=" text-5xl" type="tertiary">
             +{item.points}
           </StrokedText>
           <StrokedText var="span" className="uppercase text-xl">
@@ -27,7 +27,7 @@ export default function SeasonListItem({ item }: { item: any }) {
       <div>
         <Image src={BorderImage} width={20} height={185} alt="border" />
       </div>
-      <div className="flex flex-col gap-4 z-20 relative py-6">
+      <div className="flex flex-col gap-4 z-20 relative py-6 flex-grow">
         <StrokedText var="h3" className="text-5xl">
           {item.title}
         </StrokedText>

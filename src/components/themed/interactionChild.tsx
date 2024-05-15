@@ -29,7 +29,7 @@ export default function InteractionChild({
       {isLoading ? <Loader size="md" tint="fill-white" /> : icon}
       <StrokedText
         var="span"
-        className={clsx(isLoading && 'ml-1', 'uppercase text-2xl')}
+        className={clsx(isLoading && 'ml-1', 'uppercase text-3xl')}
       >
         {title}
       </StrokedText>

@@ -10,7 +10,7 @@ export default function TrackingSeasonListItem({ item }: { item: any }) {
         width={200}
         height={200}
         alt={item.title}
-        className=" self-end"
+        className="ml-6"
       />
       <div className="flex flex-col gap-4 z-10 py-6">
         <StrokedText var="h3" className="text-5xl">

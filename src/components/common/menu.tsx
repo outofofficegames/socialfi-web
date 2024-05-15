@@ -14,7 +14,7 @@ export default function Menu() {
       <MenuButton>
         <Interactor
           icon={
-            <Image src={StarIcon} width={30} height={28} alt="Login start" />
+            <Image src={StarIcon} width={40} height={40} alt="Login start" />
           }
           title="Login"
         />
