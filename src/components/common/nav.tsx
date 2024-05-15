@@ -4,11 +4,16 @@ import LeaderIcon from '#/leader-icon.png'
 import MissonIcon from '#/mission-icon.png'
 import Image from 'next/image'
 const navLinks = [
-  { title: 'Missions', href: '/', color: 'text-BDpink', image: MissonIcon },
+  {
+    title: 'Missions',
+    href: '/',
+    color: 'text-BDlightblue',
+    image: MissonIcon,
+  },
   {
     title: 'Leaders',
     href: '/leaders',
-    color: 'text-BDlightblue',
+    color: 'text-BDpink',
     image: LeaderIcon,
   },
 ]
